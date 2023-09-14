@@ -1,0 +1,20 @@
+
+/*Add the color layout and back ground   */
+:root {
+--background: #292d3e;
+--foreground: #959dcb;
+--comment: #676e95;
+--accent: #c3e88d;
+--orangish: #f78c6c;
+--yellowish: #ffcb6b;
+--greenish: #c3e88d;
+--blusish: #82aaff;
+--purpleish: #c792ea;
+
+}
+
+
+/* Add the body to enable "font family   */
+body {
+    font-family: 'Poppins', sans-serif;
+}
