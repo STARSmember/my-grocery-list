@@ -13,7 +13,7 @@
     <!-- Add Google fonts HERE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 
     <!-- Link the Style Sheet CSS -->
     <!-- Enable CSS rules to Specify Families -->
@@ -24,21 +24,25 @@
 
 </head>
 <body>
-    <h1>My Grocery List 📝</h1>
+    <h1 class="title">My Grocery List 📝</h1>
     
     <!-- Create a form with action -->
-    <form>
-        <input type="text" placeholder="Add an item to your list" />
-        <button type="submit">Add</button>
+    <form class="newGroceryForm">
+        <input 
+        id="newGrocery" 
+        autocomplete="off"
+        type="text" 
+        placeholder="Add an item to your list" />
+        <button id="addBtn" type="submit">Add</button>
     </form>
 
 
     <!-- Here is the list "Bullet Points"  added -->
-    <ul>
+    <ul id="GroceryList">
         <!--List of items -->
-        <li>Milk</li>
-        <li>Eggs</li>
-        <li>Tortillas</li>
+        <li class="groceryItem">Milk</li>
+        <li class="groceryItem">Eggs</li>
+        <li class="groceryItem">Tortillas</li>
         <!--List of items -->
 
     </ul>
