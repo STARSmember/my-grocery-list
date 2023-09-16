@@ -5,6 +5,9 @@ import {LocalDB} from 'http://cdn.skypack.dev/peadb'
 // import Short ID package. It does not show up on website
 import shortid from 'https://cdn.skypack.dev/shortid'
 
+// important an effect package CONFETTI from the skypack website.
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+
 // link both the "import peadb" with 'const groceries' array
 // by creating a const.
    const db = new LocalDB('grocery-list-db')   // const is linked to groceries array <----- IMPORTANT
@@ -42,6 +45,8 @@ const createGroceryElement = grocery => {
     groceryElement.addEventListener('click', () => {
         groceryElement.remove()
         db.delete(grocery.key)
+        // add Confetti effect here
+        confetti({ particalCount: 90000, spread: 1000, origin: { y: 1 } })
 
     })
     return groceryElement
