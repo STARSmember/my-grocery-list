@@ -35,6 +35,15 @@ const createGroceryElement = grocery => {
     groceryElement.innerText = grocery.value
     // add "classList.add" DONT not forget the 'dot' between List AMD add.
     groceryElement.classList.add('groceryItem')
+
+    // use an element to remove the items clicked.
+    // this formula below removes the item clicked... 
+    // IMPORTANT
+    groceryElement.addEventListener('click', () => {
+        groceryElement.remove()
+        db.delete(grocery.key)
+
+    })
     return groceryElement
 }
 
